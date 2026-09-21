@@ -1,0 +1,21 @@
+{
+  "name": "@vhult/graph-storybook",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "storybook dev -p 6006 --no-open",
+    "build": "storybook build",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@vhult/graph": "*",
+    "@vhult/graph-bench": "*"
+  },
+  "devDependencies": {
+    "@storybook/html-vite": "^10.6.0",
+    "@webgpu/types": "^0.1.74",
+    "storybook": "^10.6.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  }
+}

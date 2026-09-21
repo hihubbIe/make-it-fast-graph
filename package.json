@@ -1,0 +1,16 @@
+{
+  "name": "vhult-graph-workspace",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @vhult/graph",
+    "test": "npm run test -w @vhult/graph",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "dev": "node scripts/dev.mjs",
+    "storybook:build": "npm run build -w @vhult/graph && npm run build -w @vhult/graph-storybook"
+  }
+}

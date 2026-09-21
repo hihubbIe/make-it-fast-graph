@@ -1,0 +1,14 @@
+{
+  "name": "@vhult/graph-bench",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Benchmark fixtures shared by Storybook and CI: seeded datasets, camera paths, statistics.",
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

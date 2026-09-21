@@ -1,0 +1,11 @@
+# Cloudflare Pages response headers (copied to the build root via staticDirs).
+
+# Cross-origin isolation: gives the engine its SharedArrayBuffer input ring and
+# stats. Without it the engine falls back to postMessage.
+/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
+
+# Content-hashed bundles never change under the same name: skip revalidation.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

@@ -1,0 +1,54 @@
+{
+  "name": "@vhult/graph",
+  "version": "0.1.0",
+  "description": "WebGPU graph rendering engine. Rendering only.",
+  "keywords": [
+    "graph",
+    "network",
+    "visualization",
+    "renderer",
+    "webgpu",
+    "offscreencanvas",
+    "web-worker"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hihubbIe/make-it-fast-graph.git",
+    "directory": "packages/graph"
+  },
+  "bugs": {
+    "url": "https://github.com/hihubbIe/make-it-fast-graph/issues"
+  },
+  "homepage": "https://github.com/hihubbIe/make-it-fast-graph#readme",
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "watch": "node scripts/build.mjs --watch",
+    "gen": "node scripts/build.mjs --gen-only",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@webgpu/types": "^0.1.74",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.1"
+  }
+}
