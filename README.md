@@ -1,8 +1,8 @@
 # @vhult/graph
 
-WebGPU graph rendering engine. Rendering only — no layout, no simulation.
-The build specification is [`SPEC.md`](SPEC.md); deviations are logged in
-[`packages/graph/docs/decisions.md`](packages/graph/docs/decisions.md).
+Super fast WebGPU graph rendering engine..
+
+<img width="448" height="397" alt="image" src="https://github.com/user-attachments/assets/67372405-85ef-4394-9f5d-4096b1bd4dfe" />
 
 ## Workspace
 
