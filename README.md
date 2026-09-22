@@ -4,6 +4,15 @@ Super fast WebGPU graph rendering engine..
 
 <img width="448" height="397" alt="image" src="https://github.com/user-attachments/assets/67372405-85ef-4394-9f5d-4096b1bd4dfe" />
 
+## Demo
+Storybook is available here: https://vhult-graph.ivanalglave.workers.dev/
+
+## Performance
+The goal of this library is to make a new generation graph rendering using webGPU with the highest possible level of performance.
+It is currently able to render a 25 million nodes and 66 million edges graph smoothly on a laptop iGPU.
+
+<img width="677" height="814" alt="image" src="https://github.com/user-attachments/assets/aa8b26e4-05c4-4dee-b9d0-eba157ce742a" />
+
 ## Workspace
 
 ```
